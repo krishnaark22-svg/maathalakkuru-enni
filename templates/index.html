@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pomegranate Seed Counter</title>
+</head>
+
+<body>
+
+    <h1>🍎 Pomegranate Seed Counter</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+
+        <input type="file" name="image" accept="image/*" required>
+
+        <button type="submit">
+            Count Seeds
+        </button>
+
+    </form>
+
+    {% if count is not none %}
+        <h2>Total Seeds: {{ count }}</h2>
+    {% endif %}
+
+</body>
+</html>
